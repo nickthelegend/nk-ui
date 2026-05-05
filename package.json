@@ -1,0 +1,47 @@
+{
+  "name": "nickthelegend-ui",
+  "version": "1.0.0",
+  "description": "Premium dark fintech Expo React Native component library by nickthelegend",
+  "main": "bin/cli.js",
+  "bin": {
+    "nk-ui": "bin/cli.js"
+  },
+  "keywords": [
+    "react-native",
+    "expo",
+    "ui",
+    "fintech",
+    "crypto",
+    "dark-theme"
+  ],
+  "author": "nickthelegend <nickthelegend.tech>",
+  "license": "MIT",
+  "files": [
+    "bin",
+    "src",
+    "templates"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^11.0.0",
+    "execa": "^8.0.1",
+    "fs-extra": "^11.2.0",
+    "ora": "^8.0.1",
+    "prompts": "^2.4.2"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^25.6.0",
+    "@types/prompts": "^2.4.9",
+    "@types/react": "^19.2.14",
+    "@types/react-native": "^0.72.8",
+    "expo-linear-gradient": "^55.0.13",
+    "react": "^19.2.5",
+    "react-native": "^0.85.3",
+    "typescript": "^5.9.3"
+  }
+}
