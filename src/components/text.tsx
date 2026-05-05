@@ -1,19 +1,13 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { Text as RNText, StyleSheet, TextProps } from 'react-native';
 import { useColorScheme } from '@/hooks/useColorScheme';
 import { Colors } from '@/theme/colors';
 
-export function Text() {
+export function Text(props: TextProps) {
   const scheme = useColorScheme() ?? 'dark';
   const C = Colors[scheme];
 
   return (
-    <View style={[styles.container, { backgroundColor: C.surface, borderColor: C.border }]}>
-      <Text style={{ color: C.foreground }}>Text Component (Stub)</Text>
-    </View>
+    <RNText {...props} style={[{ color: C.foreground }, props.style]} />
   );
 }
-
-const styles = StyleSheet.create({
-  container: { padding: 16, borderRadius: 12, borderWidth: 1, alignItems: 'center' },
-});
